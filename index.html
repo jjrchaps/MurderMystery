@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Velvet Blind Speakeasy — Guest Character & Costume Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-primary: #cba135;
+      --gold-light: #f7edd2;
+      --gold-dark: #8c6716;
+      --gold-gradient: linear-gradient(135deg, #dfbc5e 0%, #cba135 50%, #99731e 100%);
+      --bg-deep: #120d0b;
+      --bg-surface: #1d1614;
+      --bg-card: #ffffff;
+      --bg-card-alt: #fcf9f2;
+      --text-dark: #221a15;
+      --text-muted: #615349;
+      --text-light: #f5eedf;
+      --burgundy: #6e1823;
+      --burgundy-light: #942533;
+      --navy: #183354;
+      --border-warm: #e5d8c3;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+      --shadow-md: 0 6px 20px rgba(0,0,0,0.12);
+      --shadow-lg: 0 16px 36px rgba(0,0,0,0.22);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f6f3eb;
+      color: var(--text-dark);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      padding-bottom: 70px;
+    }
+
+    /* Top Hero Header */
+    .hero {
+      background: radial-gradient(circle at 50% 20%, #2b1d1a 0%, #17100e 100%);
+      color: var(--text-light);
+      padding: 50px 20px 40px;
+      text-align: center;
+      position: relative;
+      border-bottom: 4px solid var(--gold-primary);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #ffe7a3, transparent);
+    }
+
+    .hero-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .speakeasy-badge {
+      display: inline-block;
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      background: rgba(203, 161, 53, 0.15);
+      border: 1px solid rgba(203, 161, 53, 0.45);
+      padding: 6px 16px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #ffffff 30%, #f3e5ab 70%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 4px 14px rgba(0,0,0,0.6);
+    }
+
+    .hero-subtitle {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(17px, 2.5vw, 21px);
+      color: #dfd0bb;
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+
+    .spoiler-banner {
+      background: rgba(110, 24, 35, 0.4);
+      border: 1px solid rgba(203, 161, 53, 0.5);
+      border-radius: 8px;
+      padding: 14px 20px;
+      font-size: 14px;
+      color: #faebd7;
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .spoiler-banner span.icon {
+      font-size: 20px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation & Roster Bar */
+    .roster-jump-section {
+      background: #ffffff;
+      border: 1px solid var(--border-warm);
+      border-radius: 12px;
+      padding: 24px;
+      margin: -24px auto 36px;
+      position: relative;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+
+    .roster-jump-title {
+      font-family: 'Cinzel', serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    .roster-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .roster-chip {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-warm);
+      border-radius: 20px;
+      padding: 8px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .roster-chip strong {
+      color: var(--burgundy);
+    }
+
+    .roster-chip:hover {
+      background: var(--gold-primary);
+      color: #17100e;
+      border-color: var(--gold-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .roster-chip:hover strong {
+      color: #17100e;
+    }
+
+    /* Filter Toolbar */
+    .filter-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      border: 1px solid var(--border-warm);
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      background: #ffffff;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 3px rgba(203, 161, 53, 0.25);
+    }
+
+    .search-box .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #8c7e73;
+      pointer-events: none;
+    }
+
+    .filter-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .filter-btn {
+      background: #ffffff;
+      border: 1px solid var(--border-warm);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--burgundy);
+      color: #ffffff;
+      border-color: var(--burgundy);
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+      gap: 28px;
+    }
+
+    @media (max-width: 580px) {
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Character Card */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-warm);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      scroll-margin-top: 24px;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: #d1c0a8;
+    }
+
+    /* Card Header */
+    .card-header {
+      background: linear-gradient(135deg, #1e1513 0%, #2b1d1a 100%);
+      color: #ffffff;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--gold-primary);
+    }
+
+    .player-assigned {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(203, 161, 53, 0.22);
+      border: 1px solid var(--gold-primary);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffeab0;
+      letter-spacing: 0.5px;
+    }
+
+    .char-badge-gender {
+      font-family: 'Cinzel', serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #d8c3ad;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    /* Card Content */
+    .card-body {
+      padding: 22px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 16px;
+    }
+
+    .char-name-block {
+      border-bottom: 1px dashed var(--border-warm);
+      padding-bottom: 12px;
+    }
+
+    .char-title {
+      font-family: 'Cinzel', serif;
+      font-size: 21px;
+      font-weight: 900;
+      color: #17100e;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .char-role {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 15px;
+      color: var(--burgundy);
+      font-weight: 600;
+    }
+
+    /* The Vibe */
+    .vibe-box {
+      font-size: 13.5px;
+      font-style: italic;
+      color: #43362d;
+      background: var(--bg-card-alt);
+      border-left: 3px solid var(--gold-primary);
+      padding: 10px 14px;
+      border-radius: 0 6px 6px 0;
+      line-height: 1.45;
+    }
+
+    /* Public Persona */
+    .section-label {
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--burgundy);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .persona-text {
+      font-size: 14px;
+      color: #2b221b;
+      line-height: 1.55;
+    }
+
+    /* Costume Box */
+    .outfit-box {
+      background: #faf6ed;
+      border: 1px solid #e8dbca;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+
+    .outfit-box .section-label {
+      color: var(--gold-dark);
+    }
+
+    .outfit-text {
+      font-size: 13.5px;
+      color: #2e241c;
+      line-height: 1.5;
+    }
+
+    /* Acting Tips */
+    .acting-box {
+      background: #f2f7fc;
+      border: 1px solid #d4e4f5;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 13px;
+      color: #1a3b5c;
+      line-height: 1.45;
+    }
+
+    .acting-box strong {
+      color: var(--navy);
+      font-family: 'Cinzel', serif;
+      font-size: 11.5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    /* Card Footer / Copy Action */
+    .card-footer {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid #efe6d8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: 1px solid var(--border-warm);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #5c4f45;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      background: #ffffff;
+      border-color: var(--gold-primary);
+      color: var(--burgundy);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .copy-btn.copied {
+      background: #2e7d32;
+      color: #ffffff;
+      border-color: #2e7d32;
+    }
+
+    .char-id-tag {
+      font-size: 12px;
+      font-weight: 700;
+      color: #8c7e73;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      background: #ffffff;
+      border: 1px solid var(--border-warm);
+      border-radius: 12px;
+      padding: 36px 30px;
+      margin-top: 48px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-title {
+      font-family: 'Cinzel', serif;
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .faq-item {
+      background: var(--bg-card-alt);
+      border: 1px solid var(--border-warm);
+      border-radius: 8px;
+      padding: 16px 18px;
+    }
+
+    .faq-item h4 {
+      font-family: 'Cinzel', serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #1f1614;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .faq-item p {
+      font-size: 13px;
+      color: #524439;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .page-footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: #7d6f64;
+    }
+
+    .page-footer strong {
+      color: var(--burgundy);
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+      .hero {
+        background: #ffffff;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        padding: 20px 0;
+      }
+      .hero h1 {
+        -webkit-text-fill-color: #000000;
+      }
+      .roster-jump-section, .filter-toolbar, .copy-btn {
+        display: none !important;
+      }
+      .cards-grid {
+        display: block;
+      }
+      .card {
+        page-break-inside: avoid;
+        margin-bottom: 24px;
+        border: 1px solid #777;
+        box-shadow: none !important;
+      }
+      .card-header {
+        background: #333;
+        color: #fff;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="speakeasy-badge">Chicago &bull; 1928</div>
+      <h1>The Velvet Blind Speakeasy</h1>
+      <p class="hero-subtitle">Character Guide, Public Personas & Costume Inspiration</p>
+      
+      <div class="spoiler-banner">
+        <span class="icon">🔒</span>
+        <div><strong>100% Spoiler-Free:</strong> This page contains only what guests publicly know about each other. Secret dossiers, private motives, and game-night objectives unlock via private PIN when you arrive at the speakeasy!</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Quick Roster Jump Bar -->
+    <section class="roster-jump-section" aria-label="Guest Roster">
+      <div class="roster-jump-title">✨ Find Your Character Assignment ✨</div>
+      <div class="roster-chips">
+        <a href="#char-cassandra" class="roster-chip"><strong>Cassandra</strong> &rarr; Agent Evelyn</a>
+        <a href="#char-nicole" class="roster-chip"><strong>Nicole</strong> &rarr; Daisy "Duchess"</a>
+        <a href="#char-natascha" class="roster-chip"><strong>Natascha</strong> &rarr; Alderman Cornelia</a>
+        <a href="#char-littany" class="roster-chip"><strong>Littany</strong> &rarr; Ruby Velour</a>
+        <a href="#char-brittany" class="roster-chip"><strong>Brittany</strong> &rarr; Bernice "Bernie"</a>
+        <a href="#char-james" class="roster-chip"><strong>James</strong> &rarr; Jack McGinty</a>
+        <a href="#char-brian" class="roster-chip"><strong>Brian</strong> &rarr; Tommy Malone</a>
+        <a href="#char-john" class="roster-chip"><strong>John</strong> &rarr; Salvatore Torrio</a>
+        <a href="#char-trenton" class="roster-chip"><strong>Trenton</strong> &rarr; Officer Paddy</a>
+        <a href="#char-nick" class="roster-chip"><strong>Nick</strong> &rarr; Doc Blanchard</a>
+      </div>
+    </section>
+
+    <!-- Filter & Search Toolbar -->
+    <div class="filter-toolbar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search by your name, character, or costume props..." onkeyup="filterCards()">
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" onclick="setFilter('all', this)">All Characters (10)</button>
+        <button class="filter-btn" onclick="setFilter('ladies', this)">Ladies (5)</button>
+        <button class="filter-btn" onclick="setFilter('gents', this)">Gentlemen (5)</button>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="cards-grid" id="cardsGrid">
+
+      <!-- 1. CASSANDRA: Agent Evelyn Vance -->
+      <article class="card" id="char-cassandra" data-gender="ladies" data-player="cassandra" data-search="cassandra evelyn vance prohibition agent g-woman badge fedora">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Cassandra</strong>
+          </div>
+          <span class="char-badge-gender">Lady of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Agent Evelyn &ldquo;Iron-Badge&rdquo; Vance</h2>
+            <div class="char-role">The Crooked Prohibition Agent</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Deadpan authority, corrupt G-woman, razor-sharp hypocrite, looks down her nose at the boys.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              The former poster girl for the Bureau of Prohibition who discovered that protecting speakeasies pays much better than raiding them. She sips confiscated Scotch at the end of the mahogany bar while keeping everyone in line with cold civil-service bureaucracy and a raised eyebrow.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Tailored 1920s skirt suit or high-waisted wide-leg trousers, trench coat draped over shoulders, fedora or cloche hat, shiny brass or silver badge on lapel, and a small leather notebook with a fountain pen.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Treat every gangster in the room like an unruly schoolboy. Drop dry legal jargon and remind people that &ldquo;everything in this city has an administrative fee.&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Cassandra', 'Agent Evelyn Vance', 'Tailored suit/trousers, badge, fedora/cloche hat, trench coat', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. NICOLE: Daisy "Duchess" Wellington -->
+      <article class="card" id="char-nicole" data-gender="ladies" data-player="nicole" data-search="nicole daisy duchess wellington boxing promoter fight suspenders cigar">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Nicole</strong>
+          </div>
+          <span class="char-badge-gender">Lady of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Daisy &ldquo;Duchess&rdquo; Wellington</h2>
+            <div class="char-role">The Heavyweight Boxing Promoter</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Cigar-chomping, swaggering queen of the fight game; bobs, weaves, and hustles.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              Fearless, loud manager who clawed her way up from the stockyards to become the premier boxing promoter in Chicago. Always waving ringside tickets, bragging about her heavyweight contenders, and pacing like she is in the 15th round of a title fight.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Sharp tailored pant-suit or tweed skirt with suspenders and vest, fedora or newsboy cap tilted over one eye, stopwatch on a neck cord, unlit cigar or cigarette prop, and a rolled-up sports newspaper.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Fast, punchy energy! Shadowbox or tap people playfully on the shoulder. Use boxing metaphors for everything: &ldquo;Keep your chin tucked, kid, or you won't make the bell!&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Nicole', 'Daisy Duchess Wellington', 'Pant-suit/skirt with suspenders, newsboy/fedora, stopwatch, unlit cigar, rolled newspaper', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. NATASCHA: Alderman Cornelia Higgins -->
+      <article class="card" id="char-natascha" data-gender="ladies" data-player="natascha" data-search="natascha cornelia higgins alderman politician pearls fur mayor">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Natascha</strong>
+          </div>
+          <span class="char-badge-gender">Lady of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Alderman Cornelia &ldquo;Greasy Palm&rdquo; Higgins</h2>
+            <div class="char-role">The Corrupt City Alderman &amp; Ward Boss</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Grand political matriarch of the 19th Ward: Theatrical orator, adjusts her pearls, blusters with mock indignation.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              The grand dame of City Hall running for Mayor on the &ldquo;Reform Ticket.&rdquo; She preaches civic virtue and temperance by day, and drinks the speakeasy dry by night while holding court, kissing cheeks, and promising city contracts to anyone who votes right.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Glamorous evening coat with faux-fur collar or feather boa, silk dress, layered long pearl necklaces, feather cloche hat, vintage campaign pin (e.g. <em>&ldquo;Higgins For Mayor&rdquo;</em>), long cigarette holder, and satin pumps.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Dramatic and grand! Address everyone like your beloved constituents. Deliver theatrical toasts and gasp with royal outrage if anyone questions your unimpeachable integrity.
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Natascha', 'Alderman Cornelia Higgins', 'Glamorous fur collar coat/boa, silk dress, layered pearls, cloche hat, campaign pin', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. LITTANY: Ruby Velour -->
+      <article class="card" id="char-littany" data-gender="ladies" data-player="littany" data-search="littany ruby velour bartender flapper lipstick towel">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Littany</strong>
+          </div>
+          <span class="char-badge-gender">Lady of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Ruby &ldquo;Velvet&rdquo; Velour</h2>
+            <div class="char-role">The Velvet Blind Head Bartender</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Queen of the mahogany bar: Razor-sharp tongue, fearless, delivers devastating put-downs while sliding drinks.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              Nobody commands the brass rail like Ruby. Wiping down glasses with a towel draped over her shoulder, she knows every dirty secret poured out after 2:00 AM and treats armed mobsters, judges, and tycoons like unruly toddlers who need a nap.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Beaded 1920s flapper dress or stylish bartender vest with sleeve garters, feather headband or cloche hat, bold red lipstick, bar towel tossed casually over one shoulder, and a vintage cocktail shaker.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Unflappable confidence. Slide imaginary cocktails, roll your eyes at gangsters' dramatic excuses, and dish out devastating one-liners: &ldquo;Spill your drink or spill your story, pal—make up your mind.&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Littany', 'Ruby Velour', 'Flapper dress or vest with sleeve garters, feather headband, red lipstick, bar towel', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. BRITTANY: Bernice "Bernie" Rothstein -->
+      <article class="card" id="char-brittany" data-gender="ladies" data-player="brittany" data-search="brittany bernice bernie rothstein bookie odds eyeshade pens betting">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Brittany</strong>
+          </div>
+          <span class="char-badge-gender">Lady of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Bernice &ldquo;Bernie&rdquo; Rothstein</h2>
+            <div class="char-role">The High-Stakes Backroom Bookie</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Human calculating machine: Rapid-fire banter, nervous fidgety energy, parlay odds genius.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              A math prodigy who runs the sports book and backroom numbers racket. Quotes betting odds on literally everything that happens in the room, furiously scribbles on scraps of paper, clicks her fountain pens, and never sits completely still.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Green celluloid dealer's eyeshade or round wire spectacles, pinstripe vest over silk blouse, sleeve garters, pockets full of pens, racing forms, betting slips, and a notebook full of rapid numbers.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Fast, fidgety math brain! Quote immediate odds on whatever someone says: &ldquo;Three-to-one says that's a lie, seven-to-two says you're bluffing, pal!&rdquo; Scribble frantically on napkins.
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Brittany', 'Bernice Bernie Rothstein', 'Green dealer eyeshade/glasses, pinstripe vest, sleeve garters, pens, betting slips', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. JAMES: Jack "Machine-Gun" McGinty -->
+      <article class="card" id="char-james" data-gender="gents" data-player="james" data-search="james jack mcginty rum-runner bootlegger pinstripe fedora cigar">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>James</strong>
+          </div>
+          <span class="char-badge-gender">Gentleman of the Syndicate</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Jack &ldquo;Machine-Gun&rdquo; McGinty</h2>
+            <div class="char-role">The Rum-Runner &amp; Bootlegger</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;King of the Lake Michigan rum fleet: Boisterous waterfront captain, loud laugh, talks at 90 mph, itchy trigger finger.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              The salt-crusted captain who smuggles 100-proof Canadian rye across Lake Michigan under the very noses of Coast Guard cutters. Booming laugh, broad theatrical gestures, and a legendary swagger that fills the whole speakeasy.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Double-breasted pinstripe suit or dark vest with tie, tilted fedora with a feather, vintage pocket watch chain, hip flask in waistband, unlit cigar, and dress shoes.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Loud, boisterous, larger-than-life! Slap backs, propose sudden loud toasts, and tell tall maritime tales: &ldquo;If the Coast Guard couldn't catch me in a blizzard, nobody in this room can!&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('James', 'Jack Machine-Gun McGinty', 'Pinstripe suit/vest, tilted fedora, pocket watch chain, hip flask, cigar', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. BRIAN: Tommy "Ivory-Keys" Malone -->
+      <article class="card" id="char-brian" data-gender="gents" data-player="brian" data-search="brian tommy malone pianist jazz tuxedo bowtie music">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Brian</strong>
+          </div>
+          <span class="char-badge-gender">Gentleman of the Syndicate</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Tommy &ldquo;Ivory-Keys&rdquo; Malone</h2>
+            <div class="char-role">The Speakeasy Jazz Pianist</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Smooth, poetic stride-jazz prodigy: Calls everyone 'cat' or 'daddy-o', effortlessly charming.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              The musical soul of the joint who keeps the speakeasy swinging. Drums his fingers on every table and bar surface like he is playing stride piano, observes everything whispered in the shadows, and flashes a suave, effortless grin.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Tuxedo jacket or satin vest, rolled-up dress shirt with elastic sleeve garters, loose unbuttoned bow tie, slicked-back hair, and a rolled cylinder of vintage sheet music under the arm.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Relaxed, artistic swagger. Tap out piano rhythms on your glass, call people &ldquo;cat&rdquo; or &ldquo;canary,&rdquo; and deliver poetic observations: &ldquo;The tempo in this room is running double-time tonight.&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Brian', 'Tommy Ivory-Keys Malone', 'Tuxedo jacket/vest, sleeve garters, unbuttoned bow tie, slicked hair, sheet music', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. JOHN: Salvatore "Sal" Torrio -->
+      <article class="card" id="char-john" data-gender="gents" data-player="john" data-search="john salvatore sal torrio mob boss syndicate carnation ring spats">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>John</strong>
+          </div>
+          <span class="char-badge-gender">Gentleman of the Syndicate</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Salvatore &ldquo;Sal&rdquo; Torrio</h2>
+            <div class="char-role">The Rival North-Side Mob Boss</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;The Cicero Overlord: Aristocratic mob royalty, chillingly polite, speaks in a purring whisper, never raises his voice.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              Deadly calm, impeccably tailored syndicate boss in pearl-gray spats and a white carnation. Never raises his voice—when Sal speaks, the entire speakeasy leans in to hear him. Exudes old-world authority, polite menace, and dangerous charm.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Tailored dark 3-piece suit, contrasting vest, white carnation lapel pin, diamond pinky ring, white spats over polished dress shoes, and a classic fedora.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Quiet, chilling elegance. Never shout. Speak softly with razor precision. Flick invisible dust off people's lapels and smile politely: &ldquo;In this city, manners are the only thing separating us from the animals.&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('John', 'Salvatore Sal Torrio', 'Tailored dark 3-piece suit, white carnation pin, pinky ring, spats, fedora', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. TRENTON: Officer Paddy O'Malley -->
+      <article class="card" id="char-trenton" data-gender="gents" data-player="trenton" data-search="trenton paddy o'malley police beat cop nightstick whistle coins">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Trenton</strong>
+          </div>
+          <span class="char-badge-gender">Gentleman of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Officer Paddy &ldquo;The Tin-Star&rdquo; O&rsquo;Malley</h2>
+            <div class="char-role">The Desplaines Street Beat Cop</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Bumbling flatfoot, jovial Irish brogue, twirls his nightstick, jingles coins, acts innocently clueless.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              Has walked the Desplaines Street night beat for 15 years without ever &ldquo;noticing&rdquo; the speakeasy behind the shade shop. Jingles pocketfuls of change, rocks back on his heels, and drops cheerful phrases while turning a blind eye to Chicago's finest rackets.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Navy blue button-down coat or blazer with brass buttons, police cap or bowler hat, wooden nightstick or billy club prop, whistle on a lanyard, and a pocketful of loose coins.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Comedic, jovial Irish brogue! Rock back on your heels, twirl your nightstick, and act bewildered when serious questions come up: &ldquo;Faith and begorrah! Move along folks, nothing to see here!&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Trenton', 'Officer Paddy OMalley', 'Navy blue blazer/coat, brass buttons, police/bowler cap, nightstick prop, whistle', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10. NICK: Doc "Sawbones" Blanchard -->
+      <article class="card" id="char-nick" data-gender="gents" data-player="nick" data-search="nick doc sawbones blanchard doctor stethoscope medical bag spectacles">
+        <div class="card-header">
+          <div class="player-assigned">
+            <span>🎭</span> Played by <strong>Nick</strong>
+          </div>
+          <span class="char-badge-gender">Gentleman of Chicago</span>
+        </div>
+        <div class="card-body">
+          <div class="char-name-block">
+            <h2 class="char-title">Doc &ldquo;Sawbones&rdquo; Blanchard</h2>
+            <div class="char-role">The Disgraced Back-Alley Doctor</div>
+          </div>
+
+          <div class="vibe-box">
+            &ldquo;Cultured Southern drawl, cynical humor, clinks when walking, takes people's pulses mid-conversation.&rdquo;
+          </div>
+
+          <div>
+            <div class="section-label">🍸 Public Persona</div>
+            <p class="persona-text">
+              A former surgeon who lost his medical license and now patches up gangsters who cannot visit Cook County Hospital. Always three drinks ahead of the room, taking pulses without asking, and carrying a leather doctor's bag that clinks with amber bottles.
+            </p>
+          </div>
+
+          <div class="outfit-box">
+            <div class="section-label">🎩 Costume &amp; Prop Ideas</div>
+            <p class="outfit-text">
+              Rumpled suit or dark vest, round wire spectacles or pince-nez, stethoscope or vintage leather doctor's bag, pocket penlight, and amber glass medicine bottles.
+            </p>
+          </div>
+
+          <div class="acting-box">
+            <strong>Acting Cue &amp; Quip</strong>
+            Slow, cynical Southern drawl. Grab someone's wrist to take their pulse mid-sentence, clink bottles in your doctor bag, and diagnose people: &ldquo;Your pulse says guilt, but your liver says another bourbon.&rdquo;
+          </div>
+
+          <div class="card-footer">
+            <button class="copy-btn" onclick="copyCardInfo('Nick', 'Doc Sawbones Blanchard', 'Rumpled suit/vest, wire spectacles, stethoscope, vintage leather bag, penlight', this)">
+              📋 Copy My Info
+            </button>
+            <span class="char-id-tag">Speakeasy Guest</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Game Night FAQ -->
+    <section class="faq-section">
+      <h3 class="faq-title">🍸 What You Need to Know for Game Night</h3>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4><span>🎭</span> Do I need to memorize lines?</h4>
+          <p>Not at all! There are no scripts. You just arrive in your outfit, talk to each other in character, and mingle. The game provides everything you need on your phone.</p>
+        </div>
+        <div class="faq-item">
+          <h4><span>🔑</span> When do I get my secrets?</h4>
+          <p>Your confidential game dossier, private goals, and murder secrets are securely locked. You will receive a private PIN to unlock your file on your phone when you arrive!</p>
+        </div>
+        <div class="faq-item">
+          <h4><span>👗</span> What if I don't have a vintage costume?</h4>
+          <p>Don't worry! Everyday clothes work great with one or two simple accessories: suspenders, a vest, a fedora, a string of pearls, slicked-back hair, or a simple hat.</p>
+        </div>
+        <div class="faq-item">
+          <h4><span>🍸</span> How does the game play?</h4>
+          <p>You'll mingle, exchange rumors, discover clues, inspect evidence cards, and try to piece together who killed Big Louie before the final vote!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <p>The Velvet Blind &bull; Chicago 1928 &bull; Host-Blind Murder Mystery Party</p>
+      <p style="margin-top: 6px; font-size: 12px; color: #9c8e82;">Have your phone charged and ready for the speakeasy lobby on party night!</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // Filter by gender or all
+    function setFilter(type, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.card');
+      const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      cards.forEach(card => {
+        const matchesGender = (type === 'all' || card.getAttribute('data-gender') === type);
+        const searchBlob = card.getAttribute('data-search') || '';
+        const textContent = card.innerText.toLowerCase();
+        const matchesSearch = !search || searchBlob.includes(search) || textContent.includes(search);
+
+        if (matchesGender && matchesSearch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Real-time search filter
+    function filterCards() {
+      const search = document.getElementById('searchInput').value.toLowerCase().trim();
+      const activeBtn = document.querySelector('.filter-btn.active');
+      const currentType = activeBtn ? (activeBtn.innerText.includes('Ladies') ? 'ladies' : activeBtn.innerText.includes('Gentlemen') ? 'gents' : 'all') : 'all';
+
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const matchesGender = (currentType === 'all' || card.getAttribute('data-gender') === currentType);
+        const searchBlob = card.getAttribute('data-search') || '';
+        const textContent = card.innerText.toLowerCase();
+        const matchesSearch = !search || searchBlob.includes(search) || textContent.includes(search);
+
+        if (matchesGender && matchesSearch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Copy card details to clipboard
+    function copyCardInfo(player, charName, outfit, btn) {
+      const textToCopy = `🎩 The Velvet Blind Speakeasy
+Player: ${player}
+Role: ${charName}
+Costume Ideas: ${outfit}
+Remember: Arrive in 1920s attire. Your secret game PIN will be given at the door!`;
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const oldHtml = btn.innerHTML;
+        btn.innerHTML = '✅ Copied to Clipboard!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = oldHtml;
+          btn.classList.remove('copied');
+        }, 2200);
+      }).catch(err => {
+        console.error('Clipboard copy failed:', err);
+      });
+    }
+  </script>
+</body>
+</html>
